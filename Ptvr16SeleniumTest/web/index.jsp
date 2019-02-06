@@ -15,13 +15,14 @@
         <H1>Добро пожаловать в нашу библиотеку</H1>
         <p id="info" >${info}<br></p>
         <a id="showLogin" href="showLogin">Войти</a><br>
+        <a id="logout" href="logout">Выйти</a><br>
         <a href="showListBooks">Список книг</a><br>
         <a href="showRegistration">Зарегистрироваться</a><br>
         Для библиотекаря<br>
         <a href="showListReaders">Список читателей</a><br>
         <a href="showPageForGiveBook">Выдать книгу</a><br>
         <a href="showPageForReturnBook">Вернуть книгу</a><br>
-        <a href="showAddNewBook">Добавить книгу</a><br>
+        <a id="showAddNewBook" href="showAddNewBook">Добавить книгу</a><br>
         <a href="showAddNewReader">Добавить читателя</a><br>
         <script src="js/index.js"></script>
     </body>

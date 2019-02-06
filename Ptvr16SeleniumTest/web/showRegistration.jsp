@@ -13,7 +13,7 @@
         <title>Библиотека</title>
     </head>
     <body>
-        <h1>Добавить книгу/h1>
+        <h1>Добавить книгу</h1>
         ${info}<br>
         <a href="index.jsp">Главная страница</a><br>
         <form action="registration" method="POST">
@@ -33,7 +33,7 @@
             Повторите пароль:<br>
             <input type="text" name="password2"><br>
             <br>
-            <input type="submit" value="Зарегистрироваться">
+            <input id="btnReg" type="submit" value="Зарегистрироваться">
         </form>
     </body>
 </html>

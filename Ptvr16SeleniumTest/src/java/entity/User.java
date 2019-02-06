@@ -5,6 +5,7 @@
  */
 package entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,12 +15,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.Min;
 
-/**
- *
- * @author Melnikov
- */
 @Entity
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -131,6 +128,10 @@ public class User {
                 + " " 
                 + reader.getSurname()
                 + '}';
+    }
+
+    public String getName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
